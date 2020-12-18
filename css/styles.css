@@ -40,12 +40,21 @@ a {
 
 header a {
   color: #fff;
+  padding: 10px;
 }
 
 .cta {
   background-color: #bb0000;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1em;
+  border-radius: 6px;
+  text-transform: uppercase;
+  padding: 10px 80px;
+}
+
+.cta__small {
+  padding: 8px 30px;
+  font-size: 0.8em;
 }
 
 .active {
