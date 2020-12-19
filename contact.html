@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Contact Guitar Kings for amazing products"
@@ -26,23 +26,31 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="contact">
       <h1>Contact</h1>
       <form method="POST">
-        <label for="fname">Full name</label>
-        <input type="text" id="fname" name="name" />
-        <label for="email">Email</label>
-        <input type="email" id="email" name="Email" />
-        <label for="Guitar">Guitar</label>
-        <select id="Guitar" name="Guitar">
-          <option value="Adirondack Red">Adirondack Red</option>
-          <option value="Adirondack Blue">Adirondack Blue</option>
-          <option value="Adirondack Green">Adirondack Green</option>
-        </select>
-        <input type="checkbox" id="signup" name="updates" />
-        <label for="signup">Sign up for email updates.</label>
-        <label for="message">Message</label>
-        <textarea id="message" name="message"></textarea>
+        <div class="form-wrapper">
+          <section>
+            <label for="fname">Full name</label>
+            <input type="text" id="fname" name="name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" />
+            <label for="Guitar">Guitar</label>
+            <select id="Guitar" name="Guitar">
+              <option value="Adirondack Red">Adirondack Red</option>
+              <option value="Adirondack Blue">Adirondack Blue</option>
+              <option value="Adirondack Green">Adirondack Green</option>
+            </select>
+            <div>
+              <input type="checkbox" id="signup" name="updates" />
+              <label for="signup">Sign up for email updates.</label>
+            </div>
+          </section>
+          <section>
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </section>
+        </div>
         <input type="submit" value="Send Now" class="cta" />
       </form>
     </main>
